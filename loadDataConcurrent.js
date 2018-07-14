@@ -18,8 +18,8 @@ console.log("Importing movies into DynamoDB. Please wait.");
 var questions = [
  {
     type: "input",
-    name: "concurrence",
-    message: "please input desired test concurrence :",
+    name: "concurrency",
+    message: "please input desired test concurrency :",
     default: 100
   },
   {
@@ -38,6 +38,10 @@ inquirer
       var concurrence = answers.concurrence   
 
       var timer = answers.timer  
+<<<<<<< HEAD
+=======
+
+>>>>>>> a666915632abb88565cfd6191a2b78ad5cbeac65
       //设置每秒并发
       var myInterval=setInterval(sendDataConcurrent,1000, concurrence);
       //设置执行时间，执行时间过后会stop掉上面的并发
@@ -75,10 +79,10 @@ async function _a_ddb_put(result) {
   });
 }
 
-async function sendDataConcurrent(concurrence) {
+async function sendDataConcurrent(concurrency) {
   const t1 = Date.now();
   const promises = [];
-  for (let i = 1; i <= concurrence; i += 1) {
+  for (let i = 1; i <= concurrency; i += 1) {
     promises.push(_a_ddb_put(i));
   }
   const result = await Promise.all(promises)
