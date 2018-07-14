@@ -105,7 +105,7 @@ Created table. Table description JSON: {
 ```
 [root@ip-172-31-17-57 Ddbtest]# node loadDataConcurrent.js
 Importing movies into DynamoDB. Please wait.
-? please input desired test concurrence : 1000
+? please input desired test concurrency : 1000
 ? please input desired test time by Seconds : (50000) 1000000
 ```
 > 执行过程中看到的耗时为每指定数量个并发的耗时，可以看到均为1s以内，通过在程序中设定执行的时间为1s一次即可以测试指定并发，指定WCU&RCU下的情况
