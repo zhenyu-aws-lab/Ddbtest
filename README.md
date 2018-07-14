@@ -110,6 +110,8 @@ Importing movies into DynamoDB. Please wait.
 ```
 > 执行过程中看到的耗时为每指定数量个并发的耗时，可以看到均为1s以内，通过在程序中设定执行的时间为1s一次即可以测试指定并发，指定WCU&RCU下的情况
 
+#### 测试结果如下图所示
 
+![image](https://s3-us-west-2.amazonaws.com/zhenyu-github/ddbttest/result.jpg)
 
 
