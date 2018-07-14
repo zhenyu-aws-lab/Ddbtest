@@ -11,8 +11,7 @@ Prerequsite
 
 
 ### 1.Git clone this repository
-`
-[ec2-user@**** ~]$ git clone https://github.com/zhenyu-aws-lab/Ddbtest.git`
+`[ec2-user@**** ~]$ git clone https://github.com/zhenyu-aws-lab/Ddbtest.git`
 
 
 ###### 进入项目目录 & 安装本node程序相关的依赖包
@@ -31,12 +30,15 @@ up to date in 0.235s`
 
 ##### 设定实验Region
 本实验默认在Oregan进行，如果需要修改，请修改MoviesCreateTable.js & loadDataConcurrent.js 下述部分中的**region**
-`AWS.config.update({
+```
+AWS.config.update({
   region: "us-west-2"
-});`
+});
+```
 ##### 在项目目录执行以下命令，得到输出
 
-`root@ip-172-31-17-57 Ddbtest]# node MoviesCreateTable.js
+```
+root@ip-172-31-17-57 Ddbtest]# node MoviesCreateTable.js
 Created table. Table description JSON: {
   "TableDescription": {
     "AttributeDefinitions": [
@@ -72,7 +74,8 @@ Created table. Table description JSON: {
     "TableArn": "arn:aws:dynamodb:us-west-2:269562551342:table/Movies",
     "TableId": "0f52c126-9400-4b71-a4ea-5c67894be424"
   }
-}`
+}
+```
 
 ### 3.Test with different setting
 
