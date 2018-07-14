@@ -16,8 +16,7 @@ Prerequsite
 
 
 ###### 进入项目目录 & 安装本node程序相关的依赖包
-`
-[root@*** ec2-user]# cd Ddbtest/
+`[root@*** ec2-user]# cd Ddbtest/
 [root@*** Ddbtest]# npm install
 npm WARN saveError ENOENT: no such file or directory, open '/home/ec2-user/Ddbtest/package.json'
 npm WARN enoent ENOENT: no such file or directory, open '/home/ec2-user/Ddbtest/package.json'
@@ -73,8 +72,7 @@ Created table. Table description JSON: {
     "TableArn": "arn:aws:dynamodb:us-west-2:269562551342:table/Movies",
     "TableId": "0f52c126-9400-4b71-a4ea-5c67894be424"
   }
-}
-`
+}`
 
 ### 3.Test with different setting
 
