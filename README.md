@@ -9,3 +9,19 @@ Prerequsite
 
 
 
+###
+Git clone this repository
+
+###
+Install node V9.0.0(at least support ES6)
+
+
+###
+Create Table
+
+
+### 
+Test with different setting
+
+
+
