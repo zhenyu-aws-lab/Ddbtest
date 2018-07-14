@@ -4,8 +4,8 @@
 Prerequsite 
 -----
 
-* A AWS account 
-* A EC2 Instance with DDBWriteAccess 
+* An AWS account 
+* An EC2 Instance with DDBWriteAccess 
 * Install git on EC2
 * Install node on EC2
 
