@@ -1,0 +1,26 @@
+{
+  "name": "ddbtest",
+  "version": "1.0.0",
+  "description": "基于不同并发测试Global Table延时 =========",
+  "main": "MoviesCreateTable.js",
+  "dependencies": {
+    "aws-sdk": "^2.273.1",
+    "commander": "^2.16.0",
+    "inquirer": "^6.0.0",
+    "log4js": "^2.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhenyu-aws-lab/Ddbtest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhenyu-aws-lab/Ddbtest/issues"
+  },
+  "homepage": "https://github.com/zhenyu-aws-lab/Ddbtest#readme"
+}
