@@ -15,7 +15,8 @@ Prerequsite
 
 
 ###### 进入项目目录 & 安装本node程序相关的依赖包
-`[root@*** ec2-user]# cd Ddbtest/
+```
+[root@*** ec2-user]# cd Ddbtest/
 [root@*** Ddbtest]# npm install
 npm WARN saveError ENOENT: no such file or directory, open '/home/ec2-user/Ddbtest/package.json'
 npm WARN enoent ENOENT: no such file or directory, open '/home/ec2-user/Ddbtest/package.json'
@@ -24,7 +25,8 @@ npm WARN Ddbtest No repository field.
 npm WARN Ddbtest No README data
 npm WARN Ddbtest No license field.
 
-up to date in 0.235s`
+up to date in 0.235s
+```
 
 ### 2.Create Table
 
@@ -77,7 +79,27 @@ Created table. Table description JSON: {
 }
 ```
 
-### 3.Test with different setting
+### 3.创建Global Table
+##### 创建Ireland的Global Table
+DDB Gloabl Table的实现是基于DDB Stream实现的，所以如需要建立DDB Global Table我们需要满足如下条件
+* Empty Table  
+* Enable DDB Stream
+
+如下图所示
+![image](https://s3-us-west-2.amazonaws.com/zhenyu-github/ddbttest/initialize.jpg)
+
+创建Ireland region的Global Table
+![image](https://s3-us-west-2.amazonaws.com/zhenyu-github/ddbttest/create_table.jpg)
+
+等待一定时间后，点击界面的刷新按钮，可以看到Global Table已经生成
+![image](https://s3-us-west-2.amazonaws.com/zhenyu-github/ddbttest/global_table.jpg)
+
+调整Global Table的WCU & RCU，此处设置为1000
+
+![image](https://s3-us-west-2.amazonaws.com/zhenyu-github/ddbttest/cocurrency.jpg)
+
+
+### 4.Test with different setting
 
 
 
