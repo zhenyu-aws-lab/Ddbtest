@@ -1,4 +1,4 @@
-This repo is used for testing global table replication latency with different cocurrency and timer setting
+基于不同并发测试Global Table延时
 =========
 
 Prerequsite 
