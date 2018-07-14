@@ -38,10 +38,6 @@ inquirer
       var concurrence = answers.concurrence   
 
       var timer = answers.timer  
-<<<<<<< HEAD
-=======
-
->>>>>>> a666915632abb88565cfd6191a2b78ad5cbeac65
       //设置每秒并发
       var myInterval=setInterval(sendDataConcurrent,1000, concurrence);
       //设置执行时间，执行时间过后会stop掉上面的并发
