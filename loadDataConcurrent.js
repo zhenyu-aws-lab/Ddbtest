@@ -38,19 +38,13 @@ inquirer
       var concurrence = answers.concurrence   
 
       var timer = answers.timer  
-
-      console.log ("timer","+++++","concurrence")
       //设置每秒并发
       var myInterval=setInterval(sendDataConcurrent,1000, concurrence);
       //设置执行时间，执行时间过后会stop掉上面的并发
-      setTimeout(stopInterval, timer) 
+      setTimeout(()=>{
+        clearTimeout(myInterval);
+      }, timer) 
 });
-
-
-//stop call to ddb
-function  stopInterval(){
-    clearTimeout(myInterval);
-}
 
 
 
