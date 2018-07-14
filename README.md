@@ -4,8 +4,8 @@ This repo is used for testing global table replication latency with different co
 Prerequsite 
 -----
 
-A AWS account 
-A EC2 Instance with DDBWriteAccess 
+*A AWS account 
+*A EC2 Instance with DDBWriteAccess 
 
 
 
