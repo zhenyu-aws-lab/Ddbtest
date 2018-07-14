@@ -81,7 +81,7 @@ Created table. Table description JSON: {
 
 ### 3.创建Global Table
 #### 创建Ireland的Global Table
-##### DDB Gloabl Table的实现是基于DDB Stream实现的，所以如需要建立DDB Global Table我们需要满足如下条件
+##### DDB Gloabl Table的实现是基于DDB Stream实现的，所以如需要建立DDB Global Table我们需要满足如下条件:
 * Empty Table  
 * Enable DDB Stream
 
@@ -100,6 +100,16 @@ Created table. Table description JSON: {
 
 
 ### 4.Test with different setting
+
+#### 执行以下应用程序，输入并发数和执行的时间
+```
+[root@ip-172-31-17-57 Ddbtest]# node loadDataConcurrent.js
+Importing movies into DynamoDB. Please wait.
+? please input desired test concurrence : 1000
+? please input desired test time by Seconds : (50000) 1000000
+```
+> 执行过程中看到的耗时为每指定数量个并发的耗时，可以看到均为1s以内，通过在程序中设定执行的时间为1s一次即可以测试指定并发，指定WCU&RCU下的情况
+
 
 
 
